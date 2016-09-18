@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html ng-app="myApp" ng-strict-di lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AngularJS Admin Panel</title>
+
+  <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+  <link rel="stylesheet" href="./dist/styles/css/style.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular-route.min.js"></script>
+</head>
+<body>
+  
+  <topnav></topnav>
+
+  <div class="root">
+    <ng-view></ng-view>
+  </div>
+
+  <script src="./dist/scripts/bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,11 @@
+{
+  "name": "admin-panel",
+  "version": "1.0.0",
+  "description": "an angularjs 1.5.8 based admin panel",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Elliot Forbes",
+  "license": "MIT"
+}
