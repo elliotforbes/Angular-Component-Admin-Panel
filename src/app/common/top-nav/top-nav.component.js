@@ -2,9 +2,9 @@ var topNav = {
   templateUrl: './app/common/top-nav/top-nav.html',
   controller: TopNavController,
   bindings: {
-    user: '<'
+    user: '=?'
   }
-};
+}
 
 angular
   .module('myApp')

@@ -1,17 +1,50 @@
+body{
+  background-color: #EEEEEE;
+}
 .nav {
   .top-nav {
-    background-color: #242628;
+    background-color: #009DD9;
     width: 100%;
-    height: 40px;
+    height: 60px;
+
+    .icon {
+      background-color: #0083BC;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 28px;
+      color: white;
+      padding-top: 9px;
+    }
+
   }
 
   .sub-nav {
     background-color: #fff;
     width: 100%;
-    height: 40px;
-    border-bottom: 1px solid #ccc;
+    height: 60px;
+    border-bottom: 2px solid #D6DADD;
   }
 }
+
+.root{
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 20px;
+
+  .component{
+    background-color: #fff;
+    .header{
+      background-color: #F7F7F7;
+      border-bottom: 1px solid #E9ECEE;
+
+    }
+
+  } 
+
+}
+
+
 
 // ---------- LOADING ICON -------------
 .sk-circle {

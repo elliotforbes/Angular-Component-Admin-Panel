@@ -1,7 +1,7 @@
 function routeProvider($routeProvider){
     $routeProvider
       .when('/', {
-          template: '<home></home>'
+          template: '<dashboard></dashboard>'
       });
 }
 routeProvider.$inject = ['$routeProvider'];

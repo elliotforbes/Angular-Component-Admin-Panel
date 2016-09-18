@@ -6,15 +6,23 @@ var uglify = require('gulp-uglify');
 var jshint = require('gulp-jshint');
 var cssnano = require('gulp-cssnano');
 var sass = require('gulp-ruby-sass');
+var sourcemaps = require('gulp-sourcemaps');
 var rename = require('gulp-rename');
 
-
 gulp.task('scripts', function() {
-  return gulp.src(['src/**/*.js', '!src/dist/'])
-    .pipe(uglify())
+  return gulp.src(['src/app/**/*.js'])
+    .pipe(sourcemaps.init())
     .pipe(concat('bundle.js'))
+    .pipe(gutil.env.type === 'production' ? uglify() : gutil.noop()) 
+    .pipe(sourcemaps.write())
     .pipe(gulp.dest('src/dist/scripts/'))
     .pipe(notify({message : 'JS files successfully concated and reduced'}));
+});
+
+gulp.task('jshint', function() {
+  return gulp.src('src/**/*.js')
+    .pipe(jshint())
+    .pipe(jshint.reporter('default'));
 });
 
 gulp.task('styles', function(){
