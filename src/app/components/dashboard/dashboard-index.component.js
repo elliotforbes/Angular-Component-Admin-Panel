@@ -1,7 +1,7 @@
 var dashboard = {
-  templateUrl: './components/dashboard/dashboard.html',
+  templateUrl: './app/components/dashboard/dashboard-index.html',
   controller: DashboardController
 };
 
-angular.module('myApp')
+angular.module('root')
   .component('dashboard', dashboard);

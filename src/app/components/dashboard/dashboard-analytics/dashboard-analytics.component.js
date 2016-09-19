@@ -1,10 +1,10 @@
 var dashboardAnalytics = {
-  templateUrl: './components/dashboard/dashboard-analytics/dashboard-analytics.html',
+  templateUrl: './app/components/dashboard/dashboard-analytics/dashboard-analytics.html',
   controller: DashboardAnalyticsController,
   bindings: {
     stats: '=?'
   }
 };
 
-angular.module('myApp')
+angular.module('root')
   .component('dashboardAnalytics', dashboardAnalytics);

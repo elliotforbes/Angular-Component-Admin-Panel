@@ -4,8 +4,8 @@ var topNav = {
   bindings: {
     user: '=?'
   }
-}
+};
 
 angular
-  .module('myApp')
+  .module('root')
   .component('topNav', topNav);

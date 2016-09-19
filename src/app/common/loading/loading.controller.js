@@ -2,5 +2,5 @@ function LoadingController() {
   var ctrl = this;
 };
 
-angular.module('myApp')
+angular.module('root')
   .controller('LoadingController', LoadingController);

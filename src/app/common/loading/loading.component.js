@@ -6,5 +6,5 @@ var loading = {
   }
 };
 
-angular.module('myApp')
+angular.module('root')
   .component('loading', loading);

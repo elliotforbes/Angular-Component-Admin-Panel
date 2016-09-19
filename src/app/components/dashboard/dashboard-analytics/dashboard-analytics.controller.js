@@ -2,5 +2,5 @@ function DashboardAnalyticsController() {
   var ctrl = this;
 }
 
-angular.module('myApp')
+angular.module('root')
   .controller('DashboardAnalyticsController', DashboardAnalyticsController);

@@ -2,5 +2,5 @@ function DashboardUsersController() {
   var ctrl = this;
 };
 
-angular.module('myApp')
+angular.module('root')
   .controller('DashboardUsersController', DashboardUsersController);

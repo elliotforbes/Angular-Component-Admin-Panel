@@ -2,6 +2,5 @@ function TopNavController() {
   var ctrl = this;
 };
 
-angular.module('myApp')
+angular.module('root')
   .controller('TopNavController', TopNavController);
-  

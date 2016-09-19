@@ -5,5 +5,6 @@ function routeProvider($routeProvider){
       });
 }
 routeProvider.$inject = ['$routeProvider'];
-angular.module('myApp')
+
+angular.module('root')
   .config(routeProvider);

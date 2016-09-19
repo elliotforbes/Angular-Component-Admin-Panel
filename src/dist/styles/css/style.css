@@ -7,6 +7,17 @@ body {
   width: 100%;
   height: 60px;
 }
+.nav .top-nav .logo {
+  text-align: center;
+  height: 60px;
+  padding-top: 19px;
+  padding-left: 20px;
+  float: left;
+}
+.nav .top-nav .logo a {
+  color: white;
+  font-weight: 200;
+}
 .nav .top-nav .icon {
   background-color: #0083BC;
   width: 60px;
@@ -15,12 +26,32 @@ body {
   font-size: 28px;
   color: white;
   padding-top: 9px;
+  float: left;
 }
 .nav .sub-nav {
   background-color: #fff;
   width: 100%;
   height: 60px;
   border-bottom: 2px solid #D6DADD;
+}
+.nav .sub-nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+.nav .sub-nav ul li {
+  float: left;
+}
+.nav .sub-nav ul li a {
+  color: #86909A;
+  text-align: center;
+  text-decoration: none;
+  display: block;
+  padding: 17px 16px;
+}
+.nav .sub-nav ul li a:hover {
+  background-color: #F7F7F7;
 }
 
 .root {
@@ -30,10 +61,25 @@ body {
 }
 .root .component {
   background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 0px 0px 4px #DCDCDC;
 }
 .root .component .header {
   background-color: #F7F7F7;
   border-bottom: 1px solid #E9ECEE;
+  border-top-right-radius: 5px;
+  border-top-left-radius: 5px;
+  padding: 20px;
+}
+.root .component .header h2 {
+  color: #009DD9;
+  margin: 0;
+  padding: 0;
+  font-size: 18px;
+  font-weight: 500;
+}
+.root .component .content {
+  padding: 20px;
 }
 
 .sk-circle {
