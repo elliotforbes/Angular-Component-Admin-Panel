@@ -1,5 +1,6 @@
 angular.module('root', [
     'ngRoute',
     'articles',
-    'dashboard'
+    'dashboard',
+    'user'
 ]);
