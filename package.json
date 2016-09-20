@@ -7,5 +7,8 @@
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Elliot Forbes",
-  "license": "MIT"
+  "license": "MIT",
+  "devDependencies": {
+    "gulp-sourcemaps": "^1.6.0"
+  }
 }
