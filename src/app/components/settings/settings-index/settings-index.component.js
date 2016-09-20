@@ -1,0 +1,6 @@
+var settingsIndex = {
+  templateUrl: 'app/components/settings/settings-index/settings-index.html'
+}
+
+angular.module('settings')
+  .component('settingsIndex', settingsIndex);

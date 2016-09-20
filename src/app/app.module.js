@@ -2,5 +2,8 @@ angular.module('root', [
     'ngRoute',
     'articles',
     'dashboard',
-    'user'
+    'user',
+    'comment',
+    'stats',
+    'settings'
 ]);
