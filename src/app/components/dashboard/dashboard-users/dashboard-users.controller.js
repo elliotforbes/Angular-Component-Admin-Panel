@@ -1,10 +1,10 @@
-function DashboardUsersController($scope) {
+function DashboardUsersController() {
   var ctrl = this;
 
-  $scope.labels = ['-4 Week', '-3 Week', '-2 Week', '-1 Week'];
-  $scope.series = ['New Users'];
+  ctrl.labels = ['-4 Week', '-3 Week', '-2 Week', '-1 Week'];
+  ctrl.series = ['New Users'];
 
-  $scope.options = {
+  ctrl.options = {
     scales: {
             yAxes: [{
                 ticks: {
@@ -14,7 +14,7 @@ function DashboardUsersController($scope) {
         }
   };
 
-  $scope.data = [
+  ctrl.data = [
     [6, 3, 4, 2]
   ];
 
@@ -22,9 +22,7 @@ function DashboardUsersController($scope) {
     console.log("Hey you guys");
   };
 
-};
-
-DashboardUsersController.$inject = ['$scope'];
+}
 
 angular.module('root')
   .controller('DashboardUsersController', DashboardUsersController);

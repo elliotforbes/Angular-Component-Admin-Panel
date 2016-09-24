@@ -5,7 +5,9 @@
         <h2>Realtime Users</h2>
       </div>
       <div class="content">
-       
+        <canvas id="bar" class="chart chart-doughnut"
+          chart-data="$ctrl.stats.realtime" chart-labels="$ctrl.stats.realtimeLabels" chart-options="$ctrl.stats.pieOptions" chart-legend="true">
+        </canvas>
       </div>
     </div>
   </div>
@@ -15,7 +17,9 @@
         <h2>Today's Visitors</h2>
       </div>
       <div class="content">
-        
+        <canvas id="bar" class="chart chart-line"
+          chart-data="$ctrl.stats.today" chart-labels="$ctrl.stats.todayLabels" chart-options="$ctrl.stats.barOptions" chart-series="$ctrl.stats.series" chart-legend="true">
+        </canvas>
       </div>
     </div>
   </div>  

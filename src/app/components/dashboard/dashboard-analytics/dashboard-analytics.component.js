@@ -2,7 +2,10 @@ var dashboardAnalytics = {
   templateUrl: './app/components/dashboard/dashboard-analytics/dashboard-analytics.html',
   controller: DashboardAnalyticsController,
   bindings: {
-    stats: '=?'
+    series: '<',
+    labels: '<',
+    data: '<',
+    options: '<'
   }
 };
 

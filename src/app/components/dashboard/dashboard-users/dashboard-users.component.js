@@ -2,7 +2,10 @@ var dashboardUsers = {
   templateUrl: './app/components/dashboard/dashboard-users/dashboard-users.html',
   controller: DashboardUsersController,
   bindings: {
-    users: '=?'
+    series: '<',
+    labels: '<',
+    data: '<',
+    options: '<'
   }
 };
 
