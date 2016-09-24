@@ -1,4 +1,4 @@
-function ArticleService($http) {
+function ArticleService($http, $log) {
 
   var service = {
     newArticle : newArticle,
@@ -11,24 +11,24 @@ function ArticleService($http) {
   /// Define 
 
   function newArticle(article) {
-    // implementation
+    $log.log("Placeholder for saving new Article")
   }
 
   function updateArticle(article) {
-    // implementation
+    $log.log("Placeholder for updating new Article");
   }
 
   function deleteArticle(id) {
-    // implementation
+    $log.log("Placeholder for deleting an article");
   }
 
   function getArticle(id) {
-    // implementation
+    $log.log("Placeholder for retrieving an article");
   }
 
 }
 
-ArticleService.$inject = ['$http'];  
+ArticleService.$inject = ['$http', '$log'];  
 
 angular
   .module('articles')
