@@ -19,6 +19,22 @@ body{
       }
     }
 
+    .user {
+      float: right;
+      padding-top: 19px;
+      color: white;
+      font-weight: 200;
+      margin-right: 20px;
+
+      img{
+        width: 30px;
+        height: 30px;
+        border-radius: 15px;
+        margin-left: 20px;
+        margin-top: -5px;
+      }
+    }
+
     .icon {
       background-color: #0083BC;
       width: 60px;
