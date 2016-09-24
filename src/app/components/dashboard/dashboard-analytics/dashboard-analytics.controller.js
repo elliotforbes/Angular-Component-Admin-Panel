@@ -1,4 +1,4 @@
-function DashboardAnalyticsController($scope) {
+function DashboardAnalyticsController($scope, $log) {
   var ctrl = this;
 
   $scope.labels = ['2006', '2007', '2008', '2009', '2010', '2011', '2012'];
@@ -20,12 +20,12 @@ function DashboardAnalyticsController($scope) {
   };
 
   ctrl.$onInit = function() {
-    console.log("Hey you guys");
+    $log.log("This will perform the REST API call to google analytics on page load");
   };
 
 };
 
-DashboardAnalyticsController.$inject = ['$scope'];
+DashboardAnalyticsController.$inject = ['$scope', '$log'];
 
 angular.module('root')
   .controller('DashboardAnalyticsController', DashboardAnalyticsController);
