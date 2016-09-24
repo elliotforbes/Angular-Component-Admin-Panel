@@ -1,0 +1,70 @@
+<div class="row" ng-init="$ctrl.init()">
+  <div class="col-lg-8">
+    <div class="component">
+      <div class="header">
+        <h2>Edit Article: {{ $ctrl.article.title }}</h2>
+      </div>
+      <div class="content">
+        <div class="form-group">
+          <label for="title">Article Title</label>
+          <input type="text" class="form-control" ng-model="$ctrl.article.title"/>
+        </div>
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea cols="30" rows="5" class="form-control" ng-model="$ctrl.article.description"></textarea>
+        </div>
+        <div class="form-group">
+          <label for="body">Article Body</label>
+          <textarea name="" id="" cols="30" rows="10" class="form-control" ng-model="$ctrl.article.body"></textarea>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4">
+    <div class="component">
+      <div class="header">
+        <h2>Options</h2>
+      </div>
+      <div class="content">
+        <div class="form-group">
+          <label for="slug">Article Slug</label>
+          <input type="text" class="form-control" ng-model="$ctrl.article.slug" placeholder="article_slug">
+        </div>
+        <div class="form-group">
+          <label>Image</label>
+          <input type="text" class="form-control" ng-model="$ctrl.article.slug" placeholder="article-image.png">
+        </div>
+        <div class="form-group">
+          <label for="courseId">Course ID</label>
+          <select class="form-control">
+            <option value="1">AngularJS</option>
+            <option value="2">Laravel 5</option>
+            <option value="3">LWJGL 3</option>
+            <option value="4">Design Patterns</option>
+            <option value="5">Artificial Intelligence</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="publishDate">Status</label>
+          <select class="form-control">
+            <option>Draft</option>
+            <option>In Review</option>
+            <option>Public</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Actions</label>
+          <div class="row">
+            <div class="col-lg-6">
+              <button class="btn btn-outline-primary btn-block">Preview</button>
+            </div>
+            <div class="col-lg-6">
+              <button class="btn btn-outline-primary btn-block" ng-click="$ctrl.save(article)">Save New Article</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

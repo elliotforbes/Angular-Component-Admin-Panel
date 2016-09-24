@@ -2,12 +2,24 @@
   <div class="col-lg-8">
     <div class="component">
       <div class="header">
-        <h2>Site Settings</h2>
+        <h2><i class="ion ion-ios-cog"></i> Site Settings</h2>
       </div>
       <div class="content">
         <div class="form-group">
+          <label>Site Address</label>
+          <input ng-model="$ctrl.settings.siteUrl" type="text" class="form-control">
+        </div>
+        <div class="form-group">
           <label>Meta Description</label>
-          <input type="text" class="form-control">
+          <input ng-model="$ctrl.settings.meta" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Tagline</label>
+          <input ng-model="$ctrl.settings.tagline" type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label>Admin Email</label>
+          <input ng-model="$ctrl.settings.adminEmail" type="text" class="form-control">
         </div>
 
       </div>
@@ -33,6 +45,14 @@
         </div>
         <div class="form-group">
           <label><i class="ion ion-social-googleplus"></i> Google+</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label><i class="ion ion-social-github"></i> Github</label>
+          <input type="text" class="form-control">
+        </div>
+        <div class="form-group">
+          <label><i class="ion ion-social-linkedin"></i> LinkedIn</label>
           <input type="text" class="form-control">
         </div>
       </div>
