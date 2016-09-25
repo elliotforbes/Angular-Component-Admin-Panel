@@ -11,6 +11,10 @@ AngularJS Component Admin Panel
 * One-way dataflow
 * Follows latest industry standards - [Angular StyleGuide](https://github.com/toddmotto/angular-styleguide)
 
+#### Screenshot
+
+![Screenshot](https://elliotforbes.co.uk/img/angular-admin.PNG)
+
 #### Getting Started
 
 Clone or pull this project to your local machine and run ```npm install```.
