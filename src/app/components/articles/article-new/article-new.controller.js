@@ -1,8 +1,9 @@
 function ArticleNewController(ArticleService, $log) {
   var ctrl = this;
 
+  ctrl.article = {};
+
   ctrl.save = function(article) {
-    $log.log("Saving New Article");
     ArticleService.newArticle(article);
   };  
 

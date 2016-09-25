@@ -1,17 +1,8 @@
 function ArticleService($http, $log) {
 
-  var service = {
-    newArticle : newArticle,
-    updateArticle : updateArticle,
-    deleteArticle : deleteArticle,
-    getArticle : getArticle
-  };
-
-  return service;
-  /// Define 
-
   function newArticle(article) {
-    $log.log("Placeholder for saving new Article")
+    console.log(article);
+    $log.log("Placeholder for saving new Article");
   }
 
   function updateArticle(article) {
@@ -25,6 +16,15 @@ function ArticleService($http, $log) {
   function getArticle(id) {
     $log.log("Placeholder for retrieving an article");
   }
+
+  var service = {
+    newArticle : newArticle,
+    updateArticle : updateArticle,
+    deleteArticle : deleteArticle,
+    getArticle : getArticle
+  };
+
+  return service;
 
 }
 
