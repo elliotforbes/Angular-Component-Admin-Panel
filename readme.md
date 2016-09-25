@@ -1,6 +1,8 @@
 AngularJS Component Admin Panel
 ================================
 
+**Live Demo:** [Demo](https://elliotforbes.co.uk/angular-demo/#/)
+
 #### Features
 
 * Component based architecture
