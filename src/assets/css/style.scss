@@ -105,6 +105,29 @@ body{
 
     .content{
       padding: 20px;
+
+      .clear-line {
+        width: 100%;
+        clear:both;
+        border-bottom: 1px solid #D6DADD;
+        height: 20px;
+        margin-bottom: 20px;
+      }
+
+      .centered{
+        text-align: center;
+      }
+
+      h5{
+        color: #86909A;
+        margin-bottom: 20px;
+
+        span{
+          color: #0077B5;
+          font-size: 32px;
+        }
+      }
+
     }
 
   } 

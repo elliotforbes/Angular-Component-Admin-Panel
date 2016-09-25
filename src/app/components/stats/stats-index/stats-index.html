@@ -5,6 +5,21 @@
         <h2>Realtime Users</h2>
       </div>
       <div class="content">
+        <div class="col-lg-6 centered">
+          <h5>Desktop: <span>67</span> users</h5>
+        </div>
+        <div class="col-lg-6 centered">
+          <h5>Tablet: <span>34</span> users</h5>
+        </div>
+        <div class="col-lg-6 centered">
+          <h5>Mobile: <span>19</span> users</h5>
+        </div>
+        <div class="col-lg-6 centered">
+          <h5>Other: <span>4</span> users</h5>
+        </div>
+
+        <div class="clear-line"></div>
+
         <canvas id="bar" class="chart chart-doughnut"
           chart-data="$ctrl.stats.realtime" chart-labels="$ctrl.stats.realtimeLabels" chart-options="$ctrl.stats.pieOptions" chart-legend="true">
         </canvas>
@@ -14,9 +29,23 @@
   <div class="col-lg-6">
     <div class="component">
       <div class="header">
-        <h2>Today's Visitors</h2>
+        <h2>This Week's Visitors</h2>
       </div>
       <div class="content">
+        <div class="col-lg-6 centered">
+          <h5>Desktop: <span>3400</span> users</h5>
+        </div>
+        <div class="col-lg-6 centered">
+          <h5>Tablet: <span>2344</span> users</h5>
+        </div>
+        <div class="col-lg-6 centered">
+          <h5>Mobile: <span>1900</span> users</h5>
+        </div>
+        <div class="col-lg-6 centered">
+          <h5>Other: <span>520</span> users</h5>
+        </div>
+
+        <div class="clear-line"></div>
         <canvas id="bar" class="chart chart-line"
           chart-data="$ctrl.stats.today" chart-labels="$ctrl.stats.todayLabels" chart-options="$ctrl.stats.barOptions" chart-series="$ctrl.stats.series" chart-legend="true">
         </canvas>
