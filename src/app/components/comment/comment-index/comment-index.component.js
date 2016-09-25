@@ -1,5 +1,6 @@
 var commentIndex = {
-  templateUrl: './app/components/comment/comment-index/comment-index.html'
+  templateUrl: './app/components/comment/comment-index/comment-index.html',
+  controller: CommentIndexController
   
 }
 
