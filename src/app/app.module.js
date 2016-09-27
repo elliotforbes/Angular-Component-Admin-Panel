@@ -5,5 +5,6 @@ angular.module('root', [
     'user',
     'comment',
     'stats',
-    'settings'
+    'settings',
+    'social'
 ]);
