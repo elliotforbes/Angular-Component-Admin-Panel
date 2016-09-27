@@ -1,4 +1,4 @@
-function ArticleEditController($log) {
+function ArticleEditController($log, ArticleService) {
   var ctrl = this;
 
   ctrl.article = {};
@@ -13,13 +13,14 @@ function ArticleEditController($log) {
     };
   };
 
-  ctrl.save = function() {
+  ctrl.save = function(article) {
     $log.log("Save any updates to the article");
+    ArticleService.updateArticle(article);
   };
 
 };
 
-ArticleEditController.$inject = ['$log'];
+ArticleEditController.$inject = ['$log', 'ArticleService'];
 
 angular.module('articles')
   .controller('ArticleEditController', ArticleEditController);

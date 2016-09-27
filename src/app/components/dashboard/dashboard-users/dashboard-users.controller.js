@@ -22,7 +22,7 @@ function DashboardUsersController() {
     console.log("Hey you guys");
   };
 
-}
+};
 
 angular.module('root')
   .controller('DashboardUsersController', DashboardUsersController);
